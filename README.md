@@ -3,6 +3,7 @@
 here is a Reversed Pendulum sample using M5Stack IMU.
 
 BOM
+
 DC moter : FM90
 
 Battery case : ４AA batteries with on\off switch

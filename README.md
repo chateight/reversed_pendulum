@@ -2,9 +2,9 @@
 
 here is a Reversed Pendulum sample using M5Stack IMU.
 
-BOM
+(BOM)
 
-(components)
+components
 
 DC moter : FM90
 
@@ -29,3 +29,8 @@ M3/15mm : 4
 M3/10mm : 2
 
 M2/10mm : 4
+
+(Files)
+
+stl_file diewctory : 3D printer data files
+

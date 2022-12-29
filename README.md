@@ -4,8 +4,6 @@ here is a Reversed Pendulum sample using M5Stack IMU.
 
 (BOM)
 
-components
-
 DC moter : FM90
 
 Battery case : ４AA batteries with on\off switch
@@ -32,7 +30,7 @@ M2/10mm : 4 (for DC motors)
 
 (Files)
 
-stl_file diewctory : 3D printer data files
+stl_file directory : 3D printer data files
 
 (PID adjustment procedure)
 

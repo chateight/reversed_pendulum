@@ -22,7 +22,7 @@ battery : 4 NiMh AA size
 
 (screws)
 
-M3/25mm : 2 (for M5Stack; one nut need to be placed beneath the bolt head to ajust the length)
+M3/25mm : 2 (for M5Stack; one nut need to be placed beneath the screw head to ajust the screw length)
 
 M3/15mm : 4 (for DC motor driver)
 
@@ -33,3 +33,11 @@ M2/10mm : 4 (for DC motors)
 (Files)
 
 stl_file diewctory : 3D printer data files
+
+(PID adjustment procedure)
+
+1st step : set P to set adequate level hunting
+
+2nd step : set I to supress hunting
+
+3rd step : set D to avoid disturbance(still TBD)

@@ -8,9 +8,9 @@ import controlP5.*;
 UDP udp;
 ControlP5 cp5;
 
-final String IP = "192.168.1.15";
+final String IP = "192.168.1.6";
 final int PORT = 3002;
-String msg = "100, 2, 2";  // P, I, D
+String msg = "1, 10, 0.05";  // P, I, D
 
 void setup() {
   size(200, 200);

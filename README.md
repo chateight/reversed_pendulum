@@ -16,7 +16,7 @@ DC motor control module : L298N
 
 Interface cable : jumper wire
 
-DC motor driver pin aasignment
+    DC motor driver pin aasignment
 
     int pwm_a = 26;
     int fw_a = 5;

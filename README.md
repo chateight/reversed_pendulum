@@ -43,12 +43,12 @@ stl_file directory : 3D printer data files
 
 (PID adjustment procedure)
 
-1st step : set P to set adequate level hunting
+1st step : set P to keep adequate level hunting
 
-2nd step : set I to supress hunting
+2nd step : set I to suppress hunting
 
 3rd step : set D to keep stable operation when disturbance is applied(still TBD)
 
 (source code)
-*.ino : M5Stack code, 
+*.ino : M5Stack code
 *.pde : Prcessing code to update M5Stack PID parameter dynamically via UDP protocol

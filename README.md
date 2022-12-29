@@ -40,4 +40,4 @@ stl_file diewctory : 3D printer data files
 
 2nd step : set I to supress hunting
 
-3rd step : set D to avoid disturbance(still TBD)
+3rd step : set D to keep stable operation when disturbance is applied(still TBD)

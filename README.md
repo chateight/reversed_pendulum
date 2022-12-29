@@ -16,6 +16,15 @@ DC motor control module : L298N
 
 Interface cable : jumper wire
 
+DC motor driver pin aasignment
+
+    int pwm_a = 26;
+    int fw_a = 5;
+    int rv_a = 25;
+    int pwm_b = 16;
+    int fw_b = 17;
+    int rv_b = 2;
+
 battery : 4 NiMh AA size
 
 (screws)
@@ -41,5 +50,5 @@ stl_file directory : 3D printer data files
 3rd step : set D to keep stable operation when disturbance is applied(still TBD)
 
 (source code)
-*.ino : M5Stack code
+*.ino : M5Stack code, 
 *.pde : Prcessing code to update M5Stack PID parameter dynamically via UDP protocol

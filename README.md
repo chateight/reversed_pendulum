@@ -30,7 +30,7 @@ battery : 4 NiMh AA size
 
 (screws)
 
-M3/25mm : 2 (for M5Stack; one nut need to be placed beneath the screw head to ajust the screw length)
+M3/25mm : 2 (for M5Stack; one nut need to be placed beneath the screw head to ajust the screw length & 2mm thickness washer is required to keep M5Stack away from the plastic base)
 
 M3/15mm : 4 (for DC motor driver)
 

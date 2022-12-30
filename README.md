@@ -24,7 +24,7 @@ Interface cable : jumper wire
     int pwm_b = 16;
     int fw_b = 17;
     int rv_b = 2;
-    coonect M5Stack GND to the DC motor driver
+    please connect M5Stack GND to the DC motor driver board GND
 
 battery : 4 NiMh AA size
 

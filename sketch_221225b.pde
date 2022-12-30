@@ -8,7 +8,7 @@ import controlP5.*;
 UDP udp;
 ControlP5 cp5;
 
-final String IP = "192.168.1.6";
+final String IP = "192.168.1.6";  // set to your M5Stack's IP address
 final int PORT = 3002;
 String msg = "1, 10, 0.05";  // P, I, D
 

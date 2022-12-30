@@ -28,7 +28,7 @@ float MOTOR_POWER_MAX = 250;
 float roll_data;
 
 // Pendulum data
-float TARGET = 84.0;     // balanced angle
+float TARGET = 83.4;      // balanced angle
 
 void setup() {
 	M5.begin();

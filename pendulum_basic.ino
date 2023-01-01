@@ -4,6 +4,7 @@ using modules ; WiFi/UDP/nDNS/time server
 */
 
 #include "common.h"
+#include "image.h"
 
 //ntp server and time info
 const char* ntpServer =  "ntp.nict.jp";
@@ -28,7 +29,7 @@ float MOTOR_POWER_MAX = 250;
 float roll_data;
 
 // Pendulum data
-float TARGET = 83.0;      // balanced angle
+float TARGET = 83.0;     // balanced angle
 
 void setup() {
 	M5.begin();
@@ -39,6 +40,7 @@ void setup() {
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   imu_setup();
   dc_setup();
+  M5.Lcd.drawJpg(panda, 10126, 60, 20);
   preTime = micros();
 }
 
@@ -68,7 +70,7 @@ void loop(){
   float Duty, P, D, now, dt, Time;
   now = TARGET - roll_data;    // calc delta
   if (-25 < now && now < 25) { 
-    if (abs(now) > 0){
+    if (abs(now) >= 0){
       Time = micros();
       dt = (Time - preTime)/1000000;
       preTime = Time;
@@ -77,7 +79,7 @@ void loop(){
       D = (P - preP)/dt;
       preP = P;
       power = P_val * P + I_val * I + D_val * D;
-      Serial.println(power);
+      //Serial.println(power);
       if (power < -1) power = -1;    // limit the max value
       if (1 < power)  power = 1; 
       if (power < 0){
@@ -85,7 +87,7 @@ void loop(){
       }else{
         dir = -1;
         }               // set forward/reverse
-  }
+    }
     // calc motor power
     Duty = (int)((MOTOR_POWER_MAX - MOTOR_POWER_MIN)* abs(power) + MOTOR_POWER_MIN); 
     dc_loop(dir, Duty);
